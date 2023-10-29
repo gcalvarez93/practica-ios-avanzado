@@ -10,13 +10,29 @@
 		B642FB302AE14F290045EA1A /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B642FB2F2AE14F290045EA1A /* SplashViewModel.swift */; };
 		B642FB322AE156CF0045EA1A /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B642FB312AE156CF0045EA1A /* Splash.storyboard */; };
 		B642FB342AE1574E0045EA1A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B642FB332AE1574E0045EA1A /* SplashViewController.swift */; };
+		B6EA78D62AED985A001D26D9 /* HeroAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78D52AED985A001D26D9 /* HeroAnnotation.swift */; };
+		B6EA78D82AED9923001D26D9 /* HeroDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6EA78D72AED9923001D26D9 /* HeroDetail.storyboard */; };
+		B6EA78DA2AED9A4A001D26D9 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78D92AED9A4A001D26D9 /* HeroDetailViewController.swift */; };
+		B6EA78DC2AED9BD4001D26D9 /* HeroDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78DB2AED9BD4001D26D9 /* HeroDetailViewModel.swift */; };
+		B6EA78DE2AED9C12001D26D9 /* HeroLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78DD2AED9C12001D26D9 /* HeroLocation.swift */; };
+		B6EA78E22AEDC364001D26D9 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78E12AEDC364001D26D9 /* MapAnnotation.swift */; };
+		B6EA78E42AEDC3B7001D26D9 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6EA78E32AEDC3B7001D26D9 /* Map.storyboard */; };
+		B6EA78E62AEDC5C9001D26D9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78E52AEDC5C9001D26D9 /* MapViewController.swift */; };
+		B6EA78E82AEDCB24001D26D9 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78E72AEDCB24001D26D9 /* MapViewModel.swift */; };
+		B6EA78EA2AEDCBA8001D26D9 /* HeroCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78E92AEDCBA8001D26D9 /* HeroCoreData.swift */; };
+		B6EA78ED2AEDCC1C001D26D9 /* HeroMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78EC2AEDCC1C001D26D9 /* HeroMapper.swift */; };
+		B6EA78F02AEDCC43001D26D9 /* LocationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78EF2AEDCC43001D26D9 /* LocationMapper.swift */; };
+		B6EA78F22AEDCC73001D26D9 /* LocationsCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78F12AEDCC73001D26D9 /* LocationsCoreData.swift */; };
+		B6EA78F42AEDCCCB001D26D9 /* LocationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78F32AEDCCCB001D26D9 /* LocationDAO.swift */; };
+		B6EA78F72AEF1746001D26D9 /* MockApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78F62AEF1746001D26D9 /* MockApiProvider.swift */; };
+		B6EA78F92AEF17A8001D26D9 /* ApiProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78F82AEF17A8001D26D9 /* ApiProviderTests.swift */; };
+		B6EA78FB2AEF183C001D26D9 /* SecureDatProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA78FA2AEF183C001D26D9 /* SecureDatProviderTests.swift */; };
 		B6F0E6402ADFF45D0012B8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E63F2ADFF45D0012B8FA /* AppDelegate.swift */; };
 		B6F0E6422ADFF45D0012B8FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E6412ADFF45D0012B8FA /* SceneDelegate.swift */; };
 		B6F0E6442ADFF45D0012B8FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E6432ADFF45D0012B8FA /* LoginViewController.swift */; };
 		B6F0E64A2ADFF45D0012B8FA /* DragonBall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E6482ADFF45D0012B8FA /* DragonBall.xcdatamodeld */; };
 		B6F0E64C2ADFF45E0012B8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F0E64B2ADFF45E0012B8FA /* Assets.xcassets */; };
 		B6F0E64F2ADFF45E0012B8FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F0E64D2ADFF45E0012B8FA /* LaunchScreen.storyboard */; };
-		B6F0E65A2ADFF45F0012B8FA /* DragonBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E6592ADFF45F0012B8FA /* DragonBallTests.swift */; };
 		B6F0E6642ADFF45F0012B8FA /* DragonBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E6632ADFF45F0012B8FA /* DragonBallUITests.swift */; };
 		B6F0E6662ADFF45F0012B8FA /* DragonBallUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E6652ADFF45F0012B8FA /* DragonBallUITestsLaunchTests.swift */; };
 		B6F0E6782AE06D3F0012B8FA /* HeroDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E6772AE06D3F0012B8FA /* HeroDAO.swift */; };
@@ -56,6 +72,23 @@
 		B642FB2F2AE14F290045EA1A /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		B642FB312AE156CF0045EA1A /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		B642FB332AE1574E0045EA1A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		B6EA78D52AED985A001D26D9 /* HeroAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAnnotation.swift; sourceTree = "<group>"; };
+		B6EA78D72AED9923001D26D9 /* HeroDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HeroDetail.storyboard; sourceTree = "<group>"; };
+		B6EA78D92AED9A4A001D26D9 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		B6EA78DB2AED9BD4001D26D9 /* HeroDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewModel.swift; sourceTree = "<group>"; };
+		B6EA78DD2AED9C12001D26D9 /* HeroLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroLocation.swift; sourceTree = "<group>"; };
+		B6EA78E12AEDC364001D26D9 /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		B6EA78E32AEDC3B7001D26D9 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		B6EA78E52AEDC5C9001D26D9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B6EA78E72AEDCB24001D26D9 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		B6EA78E92AEDCBA8001D26D9 /* HeroCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCoreData.swift; sourceTree = "<group>"; };
+		B6EA78EC2AEDCC1C001D26D9 /* HeroMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMapper.swift; sourceTree = "<group>"; };
+		B6EA78EF2AEDCC43001D26D9 /* LocationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapper.swift; sourceTree = "<group>"; };
+		B6EA78F12AEDCC73001D26D9 /* LocationsCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCoreData.swift; sourceTree = "<group>"; };
+		B6EA78F32AEDCCCB001D26D9 /* LocationDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDAO.swift; sourceTree = "<group>"; };
+		B6EA78F62AEF1746001D26D9 /* MockApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiProvider.swift; sourceTree = "<group>"; };
+		B6EA78F82AEF17A8001D26D9 /* ApiProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProviderTests.swift; sourceTree = "<group>"; };
+		B6EA78FA2AEF183C001D26D9 /* SecureDatProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDatProviderTests.swift; sourceTree = "<group>"; };
 		B6F0E63C2ADFF45D0012B8FA /* DragonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F0E63F2ADFF45D0012B8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F0E6412ADFF45D0012B8FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +98,6 @@
 		B6F0E64E2ADFF45E0012B8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6F0E6502ADFF45E0012B8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6F0E6552ADFF45F0012B8FA /* DragonBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6F0E6592ADFF45F0012B8FA /* DragonBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallTests.swift; sourceTree = "<group>"; };
 		B6F0E65F2ADFF45F0012B8FA /* DragonBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F0E6632ADFF45F0012B8FA /* DragonBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallUITests.swift; sourceTree = "<group>"; };
 		B6F0E6652ADFF45F0012B8FA /* DragonBallUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -144,6 +176,61 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		B6EA78D32AED9820001D26D9 /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA78D42AED982E001D26D9 /* MapAnnotations */,
+				B6EA78D72AED9923001D26D9 /* HeroDetail.storyboard */,
+				B6EA78D92AED9A4A001D26D9 /* HeroDetailViewController.swift */,
+				B6EA78DB2AED9BD4001D26D9 /* HeroDetailViewModel.swift */,
+			);
+			path = HeroDetail;
+			sourceTree = "<group>";
+		};
+		B6EA78D42AED982E001D26D9 /* MapAnnotations */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA78D52AED985A001D26D9 /* HeroAnnotation.swift */,
+			);
+			path = MapAnnotations;
+			sourceTree = "<group>";
+		};
+		B6EA78DF2AEDC311001D26D9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA78E02AEDC349001D26D9 /* MapAnnotations */,
+				B6EA78E32AEDC3B7001D26D9 /* Map.storyboard */,
+				B6EA78E52AEDC5C9001D26D9 /* MapViewController.swift */,
+				B6EA78E72AEDCB24001D26D9 /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		B6EA78E02AEDC349001D26D9 /* MapAnnotations */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA78E12AEDC364001D26D9 /* MapAnnotation.swift */,
+			);
+			path = MapAnnotations;
+			sourceTree = "<group>";
+		};
+		B6EA78EB2AEDCC09001D26D9 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA78EC2AEDCC1C001D26D9 /* HeroMapper.swift */,
+				B6EA78EF2AEDCC43001D26D9 /* LocationMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		B6EA78F52AEF172F001D26D9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA78F62AEF1746001D26D9 /* MockApiProvider.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		B6F0E6332ADFF45D0012B8FA = {
 			isa = PBXGroup;
 			children = (
@@ -181,7 +268,9 @@
 		B6F0E6582ADFF45F0012B8FA /* DragonBallTests */ = {
 			isa = PBXGroup;
 			children = (
-				B6F0E6592ADFF45F0012B8FA /* DragonBallTests.swift */,
+				B6EA78F52AEF172F001D26D9 /* Mocks */,
+				B6EA78F82AEF17A8001D26D9 /* ApiProviderTests.swift */,
+				B6EA78FA2AEF183C001D26D9 /* SecureDatProviderTests.swift */,
 			);
 			path = DragonBallTests;
 			sourceTree = "<group>";
@@ -227,6 +316,8 @@
 				B6F0E6482ADFF45D0012B8FA /* DragonBall.xcdatamodeld */,
 				B6F0E6792AE06E1F0012B8FA /* SecureDataProvider.swift */,
 				B6F0E6842AE06F930012B8FA /* CoreDataStack.swift */,
+				B6EA78E92AEDCBA8001D26D9 /* HeroCoreData.swift */,
+				B6EA78F12AEDCC73001D26D9 /* LocationsCoreData.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -235,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				B6F0E6772AE06D3F0012B8FA /* HeroDAO.swift */,
+				B6EA78F32AEDCCCB001D26D9 /* LocationDAO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,6 +334,7 @@
 		B6F0E6882AE070AF0012B8FA /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				B6EA78EB2AEDCC09001D26D9 /* Mappers */,
 				B6F0E68B2AE070CF0012B8FA /* Models */,
 			);
 			path = Domain;
@@ -251,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				B6F0E6892AE070C70012B8FA /* Hero.swift */,
+				B6EA78DD2AED9C12001D26D9 /* HeroLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,10 +352,12 @@
 		B6F0E68C2AE071140012B8FA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B6EA78DF2AEDC311001D26D9 /* Map */,
 				B6F0E68D2AE0712B0012B8FA /* Launch */,
 				B642FB272AE14DF10045EA1A /* Splash */,
 				B6F0E68E2AE0713E0012B8FA /* Login */,
 				B6F0E6912AE0779E0012B8FA /* Heroes */,
+				B6EA78D32AED9820001D26D9 /* HeroDetail */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -419,6 +515,8 @@
 				B6F0E64F2ADFF45E0012B8FA /* LaunchScreen.storyboard in Resources */,
 				B6F0E64C2ADFF45E0012B8FA /* Assets.xcassets in Resources */,
 				B6F0E6982AE07D1B0012B8FA /* Heroes.storyboard in Resources */,
+				B6EA78E42AEDC3B7001D26D9 /* Map.storyboard in Resources */,
+				B6EA78D82AED9923001D26D9 /* HeroDetail.storyboard in Resources */,
 				B6F0E6A12AE085840012B8FA /* Login.storyboard in Resources */,
 				B6F0E6962AE078000012B8FA /* HeroCellView.xib in Resources */,
 				B642FB322AE156CF0045EA1A /* Splash.storyboard in Resources */,
@@ -451,16 +549,28 @@
 				B6F0E69C2AE07D970012B8FA /* HeroesViewModel.swift in Sources */,
 				B6F0E6872AE0706A0012B8FA /* ApiProvider.swift in Sources */,
 				B6F0E68A2AE070C70012B8FA /* Hero.swift in Sources */,
+				B6EA78EA2AEDCBA8001D26D9 /* HeroCoreData.swift in Sources */,
 				B6F0E6952AE078000012B8FA /* HeroCellView.swift in Sources */,
+				B6EA78F42AEDCCCB001D26D9 /* LocationDAO.swift in Sources */,
 				B6F0E6442ADFF45D0012B8FA /* LoginViewController.swift in Sources */,
 				B6F0E64A2ADFF45D0012B8FA /* DragonBall.xcdatamodeld in Sources */,
+				B6EA78F02AEDCC43001D26D9 /* LocationMapper.swift in Sources */,
+				B6EA78D62AED985A001D26D9 /* HeroAnnotation.swift in Sources */,
 				B6F0E69A2AE07D5D0012B8FA /* HeroesViewController.swift in Sources */,
 				B642FB342AE1574E0045EA1A /* SplashViewController.swift in Sources */,
+				B6EA78E22AEDC364001D26D9 /* MapAnnotation.swift in Sources */,
 				B6F0E6402ADFF45D0012B8FA /* AppDelegate.swift in Sources */,
+				B6EA78E62AEDC5C9001D26D9 /* MapViewController.swift in Sources */,
 				B6F0E6422ADFF45D0012B8FA /* SceneDelegate.swift in Sources */,
 				B6F0E6782AE06D3F0012B8FA /* HeroDAO.swift in Sources */,
 				B6F0E6902AE072390012B8FA /* LoginViewModel.swift in Sources */,
+				B6EA78E82AEDCB24001D26D9 /* MapViewModel.swift in Sources */,
+				B6EA78DE2AED9C12001D26D9 /* HeroLocation.swift in Sources */,
+				B6EA78DC2AED9BD4001D26D9 /* HeroDetailViewModel.swift in Sources */,
 				B6F0E67A2AE06E1F0012B8FA /* SecureDataProvider.swift in Sources */,
+				B6EA78F22AEDCC73001D26D9 /* LocationsCoreData.swift in Sources */,
+				B6EA78ED2AEDCC1C001D26D9 /* HeroMapper.swift in Sources */,
+				B6EA78DA2AED9A4A001D26D9 /* HeroDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +578,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F0E65A2ADFF45F0012B8FA /* DragonBallTests.swift in Sources */,
+				B6EA78F72AEF1746001D26D9 /* MockApiProvider.swift in Sources */,
+				B6EA78FB2AEF183C001D26D9 /* SecureDatProviderTests.swift in Sources */,
+				B6EA78F92AEF17A8001D26D9 /* ApiProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

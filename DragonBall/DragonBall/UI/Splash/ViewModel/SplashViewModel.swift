@@ -23,7 +23,7 @@ class SplashViewModel: SplashViewControllerDelegate {
     lazy var heroesViewModel: HeroesViewControllerDelegate = {
         HeroesViewModel(
             apiProvider: apiProvider,
-            secureDataProvider: secureDataProvider
+            secureData: secureDataProvider
         )
     }()
 

@@ -14,7 +14,7 @@ class HeroCellView: UITableViewCell {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var heroName: UILabel!
-    @IBOutlet weak var heroPhoto: UIImageView!
+    @IBOutlet weak var heroImage: UIImageView!
     @IBOutlet weak var heroDescription: UILabel!
     
     
@@ -22,7 +22,7 @@ class HeroCellView: UITableViewCell {
         super.prepareForReuse()
 
         heroName.text = nil
-        heroPhoto.image = nil
+        heroImage.image = nil
         heroDescription.text = nil
     }
 
@@ -35,9 +35,6 @@ class HeroCellView: UITableViewCell {
         containerView.layer.shadowRadius = 8
         containerView.layer.shadowOpacity = 0.4
 
-        heroPhoto.layer.cornerRadius = 8
-        heroPhoto.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMinYCorner]
-
         selectionStyle = .none
     }
 
@@ -48,7 +45,7 @@ class HeroCellView: UITableViewCell {
     ) {
         self.heroName.text = name
         self.heroDescription.text = description
-        self.heroPhoto.kf.setImage(with: URL(string: photo ?? ""))
+        self.heroImage.kf.setImage(with: URL(string: photo ?? ""))
     }
 }
 

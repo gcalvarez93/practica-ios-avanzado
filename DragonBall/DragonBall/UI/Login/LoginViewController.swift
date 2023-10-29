@@ -50,6 +50,7 @@ private enum FieldType: Int {
 
 // MARK: - Lifecycle -
 override func viewDidLoad() {
+    self.navigationController?.isNavigationBarHidden = true
     super.viewDidLoad()
     initViews()
     setObservers()

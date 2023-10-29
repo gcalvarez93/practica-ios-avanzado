@@ -17,7 +17,7 @@ class LoginViewModel: LoginViewControllerDelegate {
     var heroesViewModel: HeroesViewControllerDelegate {
         HeroesViewModel(
             apiProvider: apiProvider,
-            secureDataProvider: secureDataProvider
+            secureData: secureDataProvider
         )
     }
 
@@ -76,19 +76,20 @@ class LoginViewModel: LoginViewControllerDelegate {
         }
 
         secureDataProvider.save(token: token)
+        viewState?(.loading(false))
         viewState?(.navigateToNext)
     }
 
     // MARK: - Private functions -
-    private func isValid(email: String?) -> Bool {
+     func isValid(email: String?) -> Bool {
         email?.isEmpty == false && (email?.contains("@") ?? false)
     }
 
-    private func isValid(password: String?) -> Bool {
+    func isValid(password: String?) -> Bool {
         password?.isEmpty == false && (password?.count ?? 0) >= 4
     }
 
-    private func doLoginWith(email: String, password: String) {
+    func doLoginWith(email: String, password: String) {
         apiProvider.login(for: email,
                           with: password)
     }

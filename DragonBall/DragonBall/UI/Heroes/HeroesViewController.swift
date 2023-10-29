@@ -10,16 +10,22 @@ import UIKit
 // MARK: - View Protocol -
 protocol HeroesViewControllerDelegate {
     var viewState: ((HeroesViewState) -> Void)? { get set }
-    var heroesCount: Int { get }
-
+    
+    func heroesCount() -> Int
     func onViewAppear()
     func heroBy(index: Int) -> Hero?
+    func logOut()
+    func heroDetailViewModel(index: Int) -> HeroDetailViewControllerDelegate
+    func loginViewModel() -> LoginViewControllerDelegate
+    func mapViewModel() -> MapViewControllerDelegate
 }
 
 // MARK: - View State -
 enum HeroesViewState {
     case loading(_ isLoading: Bool)
     case updateData
+    case logout
+    case network
 }
 
 // MARK: - Class -
@@ -33,11 +39,55 @@ class HeroesViewController: UIViewController {
 
     // MARK: - Lifecycle -
     override func viewDidLoad() {
+        self.navigationController?.isNavigationBarHidden = true
         super.viewDidLoad()
         initViews()
         setObservers()
         viewModel?.onViewAppear()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HEROES_TO_HERO_DETAIL" {
+           guard let index = sender as? Int,
+              let heroDetailViewController = segue.destination as? HeroDetailViewController,
+              let detailViewModel = viewModel?.heroDetailViewModel(index: index) else {
+            return
+        }
+
+        heroDetailViewController.viewModel = detailViewModel
+    }
+    
+        if segue.identifier == "HEROES_TO_MAP" {
+            guard let mapViewController = segue.destination as? MapViewController,
+                  let mapViewModel = viewModel?.mapViewModel() else {
+                return
+        }
+        
+        mapViewController.viewModel = mapViewModel
+    }
+    
+        if segue.identifier == "HEROES_TO_LOGIN" {
+            guard let loginViewController = segue.destination as? LoginViewController,
+              let loginViewModel = viewModel?.loginViewModel() else {
+            return
+        }
+
+        loginViewController.viewModel = loginViewModel
+    }
+}
+    
+    // MARK: - Actions -
+    
+    @IBAction func didTapMapButton(_ sender: Any) {
+        performSegue(withIdentifier: "HEROES_TO_MAP", sender: nil)
+    }
+    
+    @IBAction func didTapLogOutButton(_ sender: Any) {
+        performSegue(withIdentifier: "HEROES_TO_LOGIN", sender: nil)
+    }
+    
+    
+    
 
     // MARK: - Private functions -
     private func initViews() {
@@ -59,6 +109,12 @@ class HeroesViewController: UIViewController {
 
                     case .updateData:
                         self?.tableView.reloadData()
+                case .logout:
+                    self?.navigationController?.popViewController(animated: true)
+                    break
+                case .network:
+                    self?.navigationController?.popViewController(animated: true)
+                    break
                 }
             }
         }
@@ -67,7 +123,7 @@ class HeroesViewController: UIViewController {
 
 extension HeroesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel?.heroesCount ?? 0
+        viewModel?.heroesCount() ?? 0
     }
 
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -92,6 +148,7 @@ extension HeroesViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Navegar a detalle Hero
+        performSegue(withIdentifier: "HEROES_TO_HERO_DETAIL",
+                     sender: indexPath.row)
     }
 }

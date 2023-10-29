@@ -1,75 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeroCellView" rowHeight="256" id="D7s-IJ-c2v" customClass="HeroCellView" customModule="DragonBall" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="256"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroCellView" rowHeight="214" id="fuG-Eq-te1" customClass="HeroCellView" customModule="DragonBallAvanzado" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="214"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D7s-IJ-c2v" id="tDc-Rv-pIR">
-                <rect key="frame" x="0.0" y="0.0" width="393" height="256"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fuG-Eq-te1" id="t0F-1p-iWp">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="214"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVX-oe-gkP">
-                        <rect key="frame" x="36" y="19" width="321" height="218"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAm-6t-B61">
+                        <rect key="frame" x="36" y="8" width="321" height="200"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVn-Oz-mVc" userLabel="heroName">
-                                <rect key="frame" x="8" y="8" width="305" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-AV-o5H" userLabel="Hero Name">
+                                <rect key="frame" x="8" y="8" width="305" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="iJA-sd-FvC"/>
+                                    <constraint firstAttribute="height" constant="25" id="pVR-k2-Nr4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                                <color key="textColor" red="0.81084007020000004" green="0.45997279880000003" blue="0.0078820604830000009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nOG-ju-mfr" userLabel="heroPhoto">
-                                <rect key="frame" x="0.0" y="37" width="181" height="181"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="nOG-ju-mfr" secondAttribute="height" multiplier="1:1" id="5R7-MG-R1X"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIE-7E-O9a" userLabel="heroDescription">
-                                <rect key="frame" x="189" y="37" width="128" height="173"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="AFQ-ch-yro">
+                                <rect key="frame" x="8" y="49" width="305" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q3K-Lg-lxp" userLabel="Hero Image">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="k29-Le-GWo"/>
+                                            <constraint firstAttribute="width" secondItem="q3K-Lg-lxp" secondAttribute="height" multiplier="1:1" id="qGD-NO-vzM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNa-uJ-FQo">
+                                        <rect key="frame" x="139" y="0.0" width="166" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="nkb-wE-Y9I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nVn-Oz-mVc" firstAttribute="top" secondItem="JVX-oe-gkP" secondAttribute="top" constant="8" id="46c-51-UUx"/>
-                            <constraint firstItem="nOG-ju-mfr" firstAttribute="top" secondItem="nVn-Oz-mVc" secondAttribute="bottom" constant="8" id="BUg-tI-C0P"/>
-                            <constraint firstItem="dIE-7E-O9a" firstAttribute="leading" secondItem="nOG-ju-mfr" secondAttribute="trailing" constant="8" id="Lfj-bp-VHm"/>
-                            <constraint firstAttribute="trailing" secondItem="dIE-7E-O9a" secondAttribute="trailing" constant="4" id="R5e-82-GRj"/>
-                            <constraint firstAttribute="bottom" secondItem="dIE-7E-O9a" secondAttribute="bottom" constant="8" id="ZK9-rm-hsO"/>
-                            <constraint firstAttribute="trailing" secondItem="nVn-Oz-mVc" secondAttribute="trailing" constant="8" id="f8O-ka-aun"/>
-                            <constraint firstItem="dIE-7E-O9a" firstAttribute="top" secondItem="nOG-ju-mfr" secondAttribute="top" id="qFx-8T-1Hg"/>
-                            <constraint firstItem="nVn-Oz-mVc" firstAttribute="leading" secondItem="JVX-oe-gkP" secondAttribute="leading" constant="8" id="qSr-L1-hhI"/>
-                            <constraint firstItem="nOG-ju-mfr" firstAttribute="leading" secondItem="JVX-oe-gkP" secondAttribute="leading" id="sVN-zN-GUG"/>
-                            <constraint firstAttribute="bottom" secondItem="nOG-ju-mfr" secondAttribute="bottom" id="vO4-0x-Au7"/>
+                            <constraint firstItem="HWo-AV-o5H" firstAttribute="top" secondItem="KAm-6t-B61" secondAttribute="top" constant="8" id="7t7-1h-xHG"/>
+                            <constraint firstItem="AFQ-ch-yro" firstAttribute="leading" secondItem="KAm-6t-B61" secondAttribute="leading" constant="8" id="8RG-y2-r4V"/>
+                            <constraint firstItem="AFQ-ch-yro" firstAttribute="top" secondItem="HWo-AV-o5H" secondAttribute="bottom" constant="16" id="Byz-fj-Tft"/>
+                            <constraint firstAttribute="trailing" secondItem="HWo-AV-o5H" secondAttribute="trailing" constant="8" id="Q5p-2F-hDW"/>
+                            <constraint firstItem="HWo-AV-o5H" firstAttribute="leading" secondItem="KAm-6t-B61" secondAttribute="leading" constant="8" id="qbT-Ro-KHc"/>
+                            <constraint firstAttribute="height" constant="200" id="vWq-zk-Hv2"/>
+                            <constraint firstAttribute="trailing" secondItem="AFQ-ch-yro" secondAttribute="trailing" constant="8" id="wIc-JI-Y63"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="JVX-oe-gkP" firstAttribute="top" secondItem="tDc-Rv-pIR" secondAttribute="topMargin" constant="8" id="Gum-B2-dPP"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="JVX-oe-gkP" secondAttribute="bottom" constant="8" id="KlS-Ua-JQ6"/>
-                    <constraint firstItem="JVX-oe-gkP" firstAttribute="leading" secondItem="tDc-Rv-pIR" secondAttribute="leadingMargin" constant="16" id="RAz-zq-37r"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="JVX-oe-gkP" secondAttribute="trailing" constant="16" id="jly-4F-rPm"/>
+                    <constraint firstItem="KAm-6t-B61" firstAttribute="top" secondItem="t0F-1p-iWp" secondAttribute="top" constant="8" id="FsZ-3d-Cgx"/>
+                    <constraint firstItem="KAm-6t-B61" firstAttribute="leading" secondItem="t0F-1p-iWp" secondAttribute="leadingMargin" constant="16" id="JfK-9U-b2g"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KAm-6t-B61" secondAttribute="trailing" constant="16" id="b0S-Bl-LVq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="KAm-6t-B61" secondAttribute="bottom" constant="8" id="fjY-al-cTD"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="containerView" destination="JVX-oe-gkP" id="wwU-aH-uHe"/>
-                <outlet property="heroDescription" destination="dIE-7E-O9a" id="CmL-0Q-Iic"/>
-                <outlet property="heroName" destination="nVn-Oz-mVc" id="oT2-IX-lEi"/>
-                <outlet property="heroPhoto" destination="nOG-ju-mfr" id="eVw-T3-DfZ"/>
+                <outlet property="containerView" destination="KAm-6t-B61" id="QkD-Bz-EaG"/>
+                <outlet property="heroDescription" destination="iNa-uJ-FQo" id="wcO-Jw-KbT"/>
+                <outlet property="heroImage" destination="q3K-Lg-lxp" id="XEe-yJ-Mvh"/>
+                <outlet property="heroName" destination="HWo-AV-o5H" id="gZ5-Fv-JqR"/>
             </connections>
-            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+            <point key="canvasLocation" x="132" y="-11"/>
         </tableViewCell>
     </objects>
     <resources>
